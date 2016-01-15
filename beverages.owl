@@ -378,6 +378,14 @@
     
 
 
+    <!-- http://www.semanticweb.org/etf/rs/sv153036m/beverages.owl#Alcohol -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/etf/rs/sv153036m/beverages.owl#Alcohol">
+        <rdf:type rdf:resource="http://www.semanticweb.org/etf/rs/sv153036m/beverages.owl#Alcohol"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/etf/rs/sv153036m/beverages.owl#Almond_liquor -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/etf/rs/sv153036m/beverages.owl#Almond_liquor">
@@ -410,6 +418,7 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/etf/rs/sv153036m/beverages.owl#Warm"/>
         <hasBase rdf:resource="http://www.semanticweb.org/etf/rs/sv153036m/beverages.owl#EspressoBase"/>
         <hasIngredient rdf:resource="http://www.semanticweb.org/etf/rs/sv153036m/beverages.owl#Hot_milk"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/etf/rs/sv153036m/beverages.owl#Milk"/>
     </owl:NamedIndividual>
     
 
@@ -421,6 +430,7 @@
         <hasIngredient rdf:resource="http://www.semanticweb.org/etf/rs/sv153036m/beverages.owl#Cold_milk"/>
         <hasBase rdf:resource="http://www.semanticweb.org/etf/rs/sv153036m/beverages.owl#EspressoBase"/>
         <hasIngredient rdf:resource="http://www.semanticweb.org/etf/rs/sv153036m/beverages.owl#Foam"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/etf/rs/sv153036m/beverages.owl#Milk"/>
     </owl:NamedIndividual>
     
 
@@ -473,6 +483,14 @@
     
 
 
+    <!-- http://www.semanticweb.org/etf/rs/sv153036m/beverages.owl#Cream -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/etf/rs/sv153036m/beverages.owl#Cream">
+        <rdf:type rdf:resource="http://www.semanticweb.org/etf/rs/sv153036m/beverages.owl#Cream"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/etf/rs/sv153036m/beverages.owl#Crushed_ice -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/etf/rs/sv153036m/beverages.owl#Crushed_ice">
@@ -487,6 +505,7 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/etf/rs/sv153036m/beverages.owl#Warm"/>
         <hasIngredient rdf:resource="http://www.semanticweb.org/etf/rs/sv153036m/beverages.owl#Condensed_milk"/>
         <hasBase rdf:resource="http://www.semanticweb.org/etf/rs/sv153036m/beverages.owl#EspressoBase"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/etf/rs/sv153036m/beverages.owl#Milk"/>
     </owl:NamedIndividual>
     
 
@@ -512,6 +531,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/etf/rs/sv153036m/beverages.owl#Espresso_con_panna">
         <rdf:type rdf:resource="http://www.semanticweb.org/etf/rs/sv153036m/beverages.owl#Warm"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/etf/rs/sv153036m/beverages.owl#Cream"/>
         <hasBase rdf:resource="http://www.semanticweb.org/etf/rs/sv153036m/beverages.owl#EspressoBase"/>
         <hasIngredient rdf:resource="http://www.semanticweb.org/etf/rs/sv153036m/beverages.owl#Whipped_cream"/>
     </owl:NamedIndividual>
@@ -533,6 +553,7 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/etf/rs/sv153036m/beverages.owl#Warm"/>
         <hasBase rdf:resource="http://www.semanticweb.org/etf/rs/sv153036m/beverages.owl#EspressoBase"/>
         <hasIngredient rdf:resource="http://www.semanticweb.org/etf/rs/sv153036m/beverages.owl#Foam"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/etf/rs/sv153036m/beverages.owl#Milk"/>
     </owl:NamedIndividual>
     
 
@@ -576,8 +597,10 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/etf/rs/sv153036m/beverages.owl#Gingerbread_latte">
         <rdf:type rdf:resource="http://www.semanticweb.org/etf/rs/sv153036m/beverages.owl#Warm"/>
         <hasIngredient rdf:resource="http://www.semanticweb.org/etf/rs/sv153036m/beverages.owl#Cold_milk"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/etf/rs/sv153036m/beverages.owl#Cream"/>
         <hasBase rdf:resource="http://www.semanticweb.org/etf/rs/sv153036m/beverages.owl#EspressoBase"/>
         <hasIngredient rdf:resource="http://www.semanticweb.org/etf/rs/sv153036m/beverages.owl#Ginger"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/etf/rs/sv153036m/beverages.owl#Milk"/>
         <hasIngredient rdf:resource="http://www.semanticweb.org/etf/rs/sv153036m/beverages.owl#Whipped_cream"/>
     </owl:NamedIndividual>
     
@@ -606,6 +629,7 @@
         <hasIngredient rdf:resource="http://www.semanticweb.org/etf/rs/sv153036m/beverages.owl#Cold_milk"/>
         <hasIngredient rdf:resource="http://www.semanticweb.org/etf/rs/sv153036m/beverages.owl#Crushed_ice"/>
         <hasBase rdf:resource="http://www.semanticweb.org/etf/rs/sv153036m/beverages.owl#EspressoBase"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/etf/rs/sv153036m/beverages.owl#Milk"/>
     </owl:NamedIndividual>
     
 
@@ -616,7 +640,9 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/etf/rs/sv153036m/beverages.owl#Cold"/>
         <hasIngredient rdf:resource="http://www.semanticweb.org/etf/rs/sv153036m/beverages.owl#Chocolate"/>
         <hasIngredient rdf:resource="http://www.semanticweb.org/etf/rs/sv153036m/beverages.owl#Cold_milk"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/etf/rs/sv153036m/beverages.owl#Cream"/>
         <hasBase rdf:resource="http://www.semanticweb.org/etf/rs/sv153036m/beverages.owl#EspressoBase"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/etf/rs/sv153036m/beverages.owl#Milk"/>
         <hasBase rdf:resource="http://www.semanticweb.org/etf/rs/sv153036m/beverages.owl#Mocha"/>
         <hasIngredient rdf:resource="http://www.semanticweb.org/etf/rs/sv153036m/beverages.owl#Whipped_cream"/>
     </owl:NamedIndividual>
@@ -630,6 +656,7 @@
         <hasBase rdf:resource="http://www.semanticweb.org/etf/rs/sv153036m/beverages.owl#EspressoBase"/>
         <hasIngredient rdf:resource="http://www.semanticweb.org/etf/rs/sv153036m/beverages.owl#Foam"/>
         <hasIngredient rdf:resource="http://www.semanticweb.org/etf/rs/sv153036m/beverages.owl#Hot_milk"/>
+        <hasIngredient rdf:resource="http://www.semanticweb.org/etf/rs/sv153036m/beverages.owl#Milk"/>
     </owl:NamedIndividual>
     
 
@@ -646,6 +673,14 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/etf/rs/sv153036m/beverages.owl#Liquid_cream">
         <rdf:type rdf:resource="http://www.semanticweb.org/etf/rs/sv153036m/beverages.owl#Liquid_cream"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/etf/rs/sv153036m/beverages.owl#Milk -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/etf/rs/sv153036m/beverages.owl#Milk">
+        <rdf:type rdf:resource="http://www.semanticweb.org/etf/rs/sv153036m/beverages.owl#Milk"/>
     </owl:NamedIndividual>
     
 
@@ -717,6 +752,14 @@
     <rdf:Description>
         <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/etf/rs/sv153036m/beverages.owl#ChocolateBase"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/etf/rs/sv153036m/beverages.owl#EspressoBase"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/etf/rs/sv153036m/beverages.owl#FilterCoffeeBase"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
             <rdf:Description rdf:about="http://www.semanticweb.org/etf/rs/sv153036m/beverages.owl#Alcohol"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/etf/rs/sv153036m/beverages.owl#Banana"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/etf/rs/sv153036m/beverages.owl#Caramel"/>
@@ -731,14 +774,6 @@
             <rdf:Description rdf:about="http://www.semanticweb.org/etf/rs/sv153036m/beverages.owl#Milk"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/etf/rs/sv153036m/beverages.owl#Peppermint"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/etf/rs/sv153036m/beverages.owl#Vanilla"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.semanticweb.org/etf/rs/sv153036m/beverages.owl#ChocolateBase"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/etf/rs/sv153036m/beverages.owl#EspressoBase"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/etf/rs/sv153036m/beverages.owl#FilterCoffeeBase"/>
         </owl:members>
     </rdf:Description>
 </rdf:RDF>
