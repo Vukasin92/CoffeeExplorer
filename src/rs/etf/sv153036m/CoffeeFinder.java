@@ -1,12 +1,21 @@
 package rs.etf.sv153036m;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 
 import org.apache.jena.query.* ;
 import org.apache.jena.rdf.model.*;
 import org.apache.jena.util.*;
 
 public class CoffeeFinder {
+	
+	private static final HashMap<String, String> mappings;
+	static
+    {
+		mappings = new HashMap<String, String>();
+		mappings.put("FilterCoffeeBase", "FilterCoffee");
+		mappings.put("ChocolateBase", "Mocha");
+    }
 	
 	private Model model;
 	private String prefixes = "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> " +
@@ -31,7 +40,12 @@ public class CoffeeFinder {
 		    {
 		      QuerySolution soln = results.nextSolution();
 		      Resource r = soln.getResource(resourceName);
-		      resultSet.add(r.getLocalName());
+		      String name = r.getLocalName();
+		      if (mappings.containsKey(name))
+		      {
+		    	  name = mappings.get(name);
+		      }
+		      resultSet.add(name);
 		    }
 		  }
 		  return resultSet.toArray(new String[resultSet.size()]);

@@ -14,6 +14,7 @@ import javax.swing.JList;
 import javax.swing.JTree;
 import javax.swing.tree.DefaultTreeModel;
 import javax.swing.tree.DefaultMutableTreeNode;
+import javax.swing.tree.TreePath;
 import javax.swing.JLabel;
 import javax.swing.JTextField;
 import javax.swing.JTextArea;
@@ -144,11 +145,18 @@ public class GUIFinder {
 		JButton btnNewButton = new JButton("Add");
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
-				String selected = tree.getSelectionPath().getLastPathComponent().toString();
+				TreePath obj = tree.getSelectionPath();
+				if (obj == null)
+				{
+					return;
+				}
+				
+				String selected = obj.getLastPathComponent().toString();
 				if (selected.equals("Ingredients"))
 				{
 					return;
 				}
+				
 				listModel_included.addElement(selected);
 			}
 		});
@@ -172,11 +180,18 @@ public class GUIFinder {
 		JButton btnAdd = new JButton("Add");
 		btnAdd.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
-				String selected = tree.getSelectionPath().getLastPathComponent().toString();
+				TreePath obj = tree.getSelectionPath();
+				if (obj == null)
+				{
+					return;
+				}
+				
+				String selected = obj.getLastPathComponent().toString();
 				if (selected.equals("Ingredients"))
 				{
 					return;
 				}
+				
 				listModel_excluded.addElement(selected);
 			}
 		});
@@ -263,7 +278,12 @@ public class GUIFinder {
 		JButton button = new JButton("Add");
 		button.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
-				textField.setText(list.getSelectedValue().toString());
+				Object obj = list.getSelectedValue();
+				if (obj == null)
+				{
+					return;
+				}
+				textField.setText(obj.toString());
 			}
 		});
 		button.setBounds(10, 65, 89, 23);
@@ -296,7 +316,12 @@ public class GUIFinder {
 		JButton button_1 = new JButton("Add");
 		button_1.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
-				textField_1.setText(list_1.getSelectedValue().toString());
+				Object obj = list_1.getSelectedValue();
+				if (obj == null)
+				{
+					return;
+				}
+				textField_1.setText(obj.toString());
 			}
 		});
 		button_1.setBounds(10, 65, 89, 23);
